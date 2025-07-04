@@ -70,7 +70,3 @@ searchForm.addEventListener('submit',(e) => {
 loadMore.addEventListener('click', ()=> {
     fetchImages(inputCon.value.trim(),++page);
 });
-
-loadMore.addEventListener("click", ()=>{
-    fetchImages(inputCon.value.trim(),++page);
-})
