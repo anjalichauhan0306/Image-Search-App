@@ -9,7 +9,7 @@ let page = 1;
  const fetchImages = async (query,page) => {
     try{
         if(page === 1){
-         imgCon.innerHTML = `<h3>Loading...</h3>`;
+        imgCon.innerHTML = `<h3>Loading...</h3>`;
     }
 
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${query}&per_page=26&client_id=${acceskey}`;
