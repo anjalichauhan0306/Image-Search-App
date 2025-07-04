@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 40px;
+}
+header{
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+header h1{
+    color: #767676;
+}
+header form .search-con{
+    margin-top: 20px;
+}
+
+header form .search-con input{
+    width: 100%;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: none;
+    background: #eee;
+}
+.img-con{
+    margin-block: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.img-con img{
+    width: 300px;
+    height: 280px;
+}
+.img-con .imagediv{
+    position: relative;
+}
+.imagediv .overlay{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: height 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagediv .overlay h3{
+    color: #eee;
+    display: none;
+    text-align: center;
+    font-size: 20px;
+}
+.imagediv:hover .overlay h3{
+    display: block;
+}
+.imagediv:hover .overlay{
+    height: 100%;
+}
+@media screen and (max-width :920px) {
+    header{
+        width: 80%;
+    }
+}
+.loadmore{
+ border: none;
+ background-color: rgb(5, 42, 65);
+ color: wheat;
+ font-size: 20px;
+ font-weight: 600;
+ padding: 8px 12px;
+ border-radius: 4px;
+ cursor: pointer;   
+ display: none;
+
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0 50px 0;
+}
