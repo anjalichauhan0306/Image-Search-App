@@ -8,9 +8,7 @@ A simple and responsive image search app powered by the **Unsplash API**. Built 
 - 🖼️ Responsive image grid layout
 - ⏭️ "Load More" button to fetch more images
 - 🧠 Uses `fetch()` and async/await for API handling
-- 🎨 Overlay with image description on hover
-- ❌ Handles empty queries gracefully
-
+- 🎨 Overlay with image description on hovers 
 ---
 ## 🛠️ Technologies Used
 - JavaScript (ES6)
