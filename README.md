@@ -13,3 +13,5 @@ A simple and responsive image search app powered by the **Unsplash API**. Built 
 ## 🛠️ Technologies Used
 - JavaScript (ES6)
 - [Unsplash API](https://unsplash.com/developers)
+
+javascript 
