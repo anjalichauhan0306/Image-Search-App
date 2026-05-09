@@ -1,28 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image search app </title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Search App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Image search app</h1>
-        <form action="" class="searchform">
-            <div class="search-con">
-            <input type="text" placeholder="Search Images 🔍" class="search-input">
-            </div>
-        </form>
-    </header>
-    <main>
-        <section>
-        <div class="img-con">
-        </div>
-        <button class="loadmore">Load More</button>
-        </section>
-    </main>
 
-    <script src="Search.js"></script>
+  <header>
+    <div class="overlay"></div>
+
+    <nav>
+      <h1>📸 ImageSearch</h1>
+      <button class="theme-btn">🌙</button>
+    </nav>
+
+    <div class="hero-content">
+      <h2>Search Stunning Images Instantly</h2>
+      <p>Find high quality wallpapers, nature, anime, cars, coding setups and more.</p>
+
+      <form class="searchform">
+        <div class="search-con">
+          <input
+            type="text"
+            placeholder="Search Images 🔍"
+            class="search-input"
+          />
+          <button type="submit" class="search-btn">Search</button>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="img-con">
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" alt="nature">
+          <div class="card-content">
+            <h3>Nature View</h3>
+            <p>Beautiful mountain scenery.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="coding">
+          <div class="card-content">
+            <h3>Developer Setup</h3>
+            <p>Modern coding workspace.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop" alt="car">
+          <div class="card-content">
+            <h3>Luxury Car</h3>
+            <p>Stylish sports car wallpaper.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="loadmore">Load More</button>
+    </section>
+  </main>
+
+  <script src="Search.js"></script>
 </body>
 </html>
